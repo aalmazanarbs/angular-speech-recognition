@@ -9,7 +9,7 @@ import { tap, takeWhile } from 'rxjs/operators';
 })
 export class AppComponent implements OnInit {
 
-    shadowleft: any = '-69px';
+    shadowleft: any = '-68px';
     shadowtop: any = '-68px';
     message = 'angular-speech-recognition sahdkjashjdkashkj ahskd askhajkshdk asdaskaskaskjskhakshkasjh kjashkjaskhaskjdakjhkd';
     borderheight = 0;
