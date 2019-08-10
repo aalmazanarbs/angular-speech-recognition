@@ -1,9 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { MatFormFieldModule, MatInputModule, MatIconModule } from '@angular/material';
-import { FormsModule } from '@angular/forms';
-
+import { MatIconModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 
@@ -13,10 +10,6 @@ import { AppComponent } from './app.component';
     ],
     imports: [
         BrowserModule,
-        BrowserAnimationsModule,
-        FormsModule,
-        MatFormFieldModule,
-        MatInputModule,
         MatIconModule
     ],
     providers: [],

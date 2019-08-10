@@ -1,20 +1,14 @@
-<div class="spch" id="spch" [ngClass]="{'s2fp':!resultspage,'s2tb':resultspage}">
-    <div class="spchc" id="spchc">
-        <div class="_o3">
+<div class="container">
+    <div class="speech-recognition">
+        <div class="mic-container">
+            <span class="mic-listening-shadow" [style.transform]="'scale(' + borderheight + ')'"></span>
+            <span class="mic-button" (click)="startSpeechRecognition();">
+                <mat-icon class="mic-icon" [ngStyle]="{ 'color' : ($listening | async) ? '#f44' : '#999' }">{{micIcon}}</mat-icon>
+            </span>
+        </div>
 
-            <div class="_AM">
-                <span class="_CMb" id="spchl" [style.top]="shadowtop" [style.left]="shadowleft" [style.transform]="'scale(' + borderheight + ')'"></span>
-                <span class="button" id="spchb">
-                    <mat-icon class="_wPb">mic</mat-icon>
-                </span>
-            </div>
-
-            <div class="_gjb">
-                <span class="spcht" id="spchi" style="color:#777">
-                    {{message}}
-                </span>
-                <span class="spcht" id="spchf" style="color:#000"></span>
-            </div>
+        <div>
+            <span class="message">{{message}}</span>
         </div>
     </div>
 </div>
